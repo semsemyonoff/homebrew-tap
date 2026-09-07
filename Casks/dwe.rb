@@ -36,9 +36,9 @@ cask "dwe" do
   fish_completion "completions/dwe.fish"
   zsh_completion "completions/dwe.zsh"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/dwe"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/dwe"]
     end
   end
 
