@@ -6,25 +6,25 @@ cask "dwe" do
     end
   end
 
-  version "0.6.2"
+  version "0.6.3"
 
   on_macos do
     on_arm do
-      sha256 "1f5574eff6bb0bbaa9577e5019fd9ef1646c777b0c24e02e74fa304a811c026f"
+      sha256 "b11b36b42608489fa016a4242fdc5be5e78b4ca89122092372f9ea357818491d"
       url "https://github.com/semsemyonoff/dwe/releases/download/v#{version}/dwe_#{version}_macos_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e48f8f1435a95f5aceab2106f58485b9e19a56630501234bac9b226d26ab7d57"
+      sha256 "32745f30cd563182f3a0942f69a5323fe655a83b4ea7c836901195bf310c51d2"
       url "https://github.com/semsemyonoff/dwe/releases/download/v#{version}/dwe_#{version}_macos_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "5b9f98bedf6955c800180a66b3a2d575dbb852156d3bb33e01c4aa6805e0768a"
+      sha256 "6f2f03c212b8c8a77b87ce8de5fd31fe1669e69ac609ccc85e226c3c1f147022"
       url "https://github.com/semsemyonoff/dwe/releases/download/v#{version}/dwe_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "eef1093369a79063d2601821c2530612c9ef7fd2fd8d28552c4a4f007c958bbb"
+      sha256 "5f8ec7c08b71446c614562adc0bcca708d38996f4ac7b77b32b5db3485a3722f"
       url "https://github.com/semsemyonoff/dwe/releases/download/v#{version}/dwe_#{version}_linux_x86_64.tar.gz"
     end
   end
