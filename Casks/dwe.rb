@@ -6,25 +6,25 @@ cask "dwe" do
     end
   end
 
-  version "0.7.1"
+  version "0.7.2"
 
   on_macos do
     on_arm do
-      sha256 "41637f3f45c5cb9aaf9c0d568819e11e1c609ffa0de6de63785e499c4b7304ff"
+      sha256 "821d83583f4e39ff5fb02d7e7622f8c07eee90913e3640ecf90e36478582276e"
       url "https://github.com/semsemyonoff/dwe/releases/download/v#{version}/dwe_#{version}_macos_arm64.tar.gz"
     end
     on_intel do
-      sha256 "79ed6a8473a9c32a1f8a80408c2aaf3dd60bf8ceda606b3098110e1c108bdf45"
+      sha256 "1e305e094653f78ac8e53d25bee3e1ea0c51c65a437b60b013d94bd01cb46043"
       url "https://github.com/semsemyonoff/dwe/releases/download/v#{version}/dwe_#{version}_macos_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "e72878e4fb791ec9ce641900aeb2ee4d6d594ab82f17509987aab7ff139d16e3"
+      sha256 "85c0797f3ae6c9bbbc23dec85a62a90f95418c5a21d840c62274348267621225"
       url "https://github.com/semsemyonoff/dwe/releases/download/v#{version}/dwe_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "c89f7b129b1bc0fb030d14574d028eb17af87752334be7b90c8132bf54a7cbe1"
+      sha256 "d874184605fbd929c9e122e3b0490296e09104c5f54ec1c4d2e8461f456b70fc"
       url "https://github.com/semsemyonoff/dwe/releases/download/v#{version}/dwe_#{version}_linux_x86_64.tar.gz"
     end
   end
@@ -39,8 +39,8 @@ cask "dwe" do
 
   binary "dwe"
   bash_completion "completions/dwe.bash"
-  fish_completion "completions/dwe.fish"
   zsh_completion "completions/dwe.zsh"
+  fish_completion "completions/dwe.fish"
 
   # No zap stanza required
 end
